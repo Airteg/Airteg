@@ -4,6 +4,6 @@
 }
 svg {
   border: 1px solid teal;
-  width: calc(100vw - 2px);
+  width: calc(100vw - 6px);
   height: calc(100vh - 6px);
 }
