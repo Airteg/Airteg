@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="ua">
+          <svg width="100vw" height="100vh">
+            <style>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Airteg</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/illuminator.css">
-</head>
+            </style>
 
-<body>
-  <section>
-    <div class="container-fluid" style="height:100%;">
-      <div class="row" style="height:100%;">
 
-        <div class="col-12 bgr2 d-flex justify-content-center">
-          <!-- <img src="/img/illuminator.svg" alt=""> -->
-          <svg width="100vh" viewbox="0 0 470 470">
+
+
+
             <radialGradient id="shadow">
               <stop offset="87%" stop-color="black" />
               <stop offset="100%" stop-color="#b1b1b1" stop-opacity="0.1" />
             </radialGradient>
+            <!-- x1="0" y1="0" x2="1.0" y2="1.0" -->
             <linearGradient id="steel1" x1="0%" y1="0" x2="100%" y2="0%" gradientTransform="rotate(-120, .5, .5)">
               <stop offset="0%" stop-color="#555555" />
               <stop offset="16%" stop-color="#7c7c7c" />
@@ -76,34 +65,6 @@
               <stop offset="57%" stop-color="#3398cc" />
               <stop offset="100%" stop-color="#ebcdff" />
             </linearGradient>
-            <!-- Болты -->
-            <linearGradient id="Bolt1" x1="0" y1="0" x2="100%" y2="0%" gradientTransform="rotate(105, .5, .5)">
-              <stop offset="0%" stop-color="#555555" />
-              <stop offset="25%" stop-color="#7c7c7c" />
-              <stop offset="40%" stop-color="#b1b1b1" />
-              <stop offset="50%" stop-color="#dddddd" />
-              <stop offset="60%" stop-color="#b1b1b1" />
-              <stop offset="75%" stop-color="#7c7c7c" />
-              <stop offset="100%" stop-color="#555555" />
-            </linearGradient>
-            <linearGradient id="Bolt2" x1="0" y1="0" x2="100%" y2="0%" gradientTransform="rotate(72, .5, .5)">
-              <stop offset="0%" stop-color="#555555" />
-              <stop offset="25%" stop-color="#7c7c7c" />
-              <stop offset="40%" stop-color="#b1b1b1" />
-              <stop offset="50%" stop-color="#dddddd" />
-              <stop offset="60%" stop-color="#b1b1b1" />
-              <stop offset="75%" stop-color="#7c7c7c" />
-              <stop offset="100%" stop-color="#555555" />
-            </linearGradient>
-            <linearGradient id="Bolt3" x1="0" y1="0" x2="100%" y2="0%" gradientTransform="rotate(30, .5, .5)">
-              <stop offset="0%" stop-color="#555555" />
-              <stop offset="25%" stop-color="#7c7c7c" />
-              <stop offset="40%" stop-color="#b1b1b1" />
-              <stop offset="50%" stop-color="#dddddd" />
-              <stop offset="60%" stop-color="#b1b1b1" />
-              <stop offset="75%" stop-color="#7c7c7c" />
-              <stop offset="100%" stop-color="#555555" />
-            </linearGradient>
             <!-- Люк -->
             <circle r="235" cx="50%" cy="50%" fill="url(#shadow)" />
             <circle r="215" cx="50%" cy="50%" fill="url(#steel1)" />
@@ -111,35 +72,6 @@
             <circle r="209" cx="50%" cy="50%" fill="url(#steel2-1)" />
             <circle r="180" cx="50%" cy="50%" fill="url(#steel3)" />
             <circle r="175" cx="50%" cy="50%" fill="url(#steel4)" />
-            <!-- Небо -->
             <circle r="170" cx="50%" cy="50%" fill="url(#sky)" />
-            <!-- Болты -->
-            <symbol id="bolt-105">
-              <circle r="10.5" cx="50%" cy="9%" stroke="url(#shadow)" stroke-width="2" fill="url(#Bolt1)" />
-            </symbol>
-            <symbol id="bolt-106">
-              <circle r="10.5" cx="50%" cy="9%" stroke="url(#shadow)" stroke-width="2" fill="url(#Bolt2)" />
-            </symbol>
-            <symbol id="bolt-107">
-              <circle r="10.5" cx="50%" cy="9%" stroke="url(#shadow)" stroke-width="2" fill="url(#Bolt3)" />
-            </symbol>
-            <use x="0%" y="0%" href="#bolt-107" transform="rotate(51.5, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-105" transform="rotate(103, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-106" transform="rotate(154.5, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-106" transform="rotate(206, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-105" transform="rotate(257.5, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-107" transform="rotate(309, 235, 235)"></use>
-            <use x="0%" y="0%" href="#bolt-105" transform="rotate(360, 235, 235)"></use>
-
 
           </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</body>
-
-</html>
