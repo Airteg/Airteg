@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>3dcube</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/blackorchid.png);
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      margin: 200px auto;
+      width: 300px;
+      height: 300px;
+      perspective: 500px;
+    }
+
+    .cube {
+      width: inherit;
+      height: inherit;
+      transform-style: preserve-3d;
+    }
+
+    .side {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border: 5px solid #fff;
+      font: normal 70px Arial;
+      text-align: center;
+      line-height: 300px;
+      color: #fff;
+      opacity: 0.5;
+    }
+
+    .front {
+      transform: translateZ(150px);
+      background: bisque;
+      color: rosybrown;
+    }
+
+    .back {
+      transform: rotateY(180deg) translateZ(150px);
+      background: red;
+      color: rosybrown;
+    }
+
+    .right {
+      transform: rotateY(90deg) translateZ(150px);
+      background: greenyellow;
+      color: green;
+
+    }
+
+    .left {
+      transform: rotateY(-90deg) translateZ(150px);
+      background: lightblue;
+      color: blue;
+    }
+
+    .top {
+      transform: rotateX(90deg) translateZ(150px);
+      background: lightcoral;
+      color:crimson;
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(150px);
+      background: black;
+      color: blue;
+    }
+
+    .f {
+      border solid 2px red;
+      height: 30px;
+    }
+  </style>
+  <div class="container">
+    <div class=row>
+      <div class="col-3 f"></div>
+      <div class="col-3 f"></div>
+      <div class="col-3 f"></div>
+      <div class="col-3 f"></div>
+    </div>
+    <div class="cube">
+      <div class=row>
+        <div class="col-3 f"></div>
+        <div class="col-3 f"></div>
+        <div class="col-3 f"></div>
+        <div class="col-3 f"></div>
+      </div>
+      <div class="side front">фронт</div>
+      <div class="side back">спина</div>
+      <div class="side right">право</div>
+      <div class="side left">ліво</div>
+      <div class="side top">верх</div>
+      <div class="side bottom">низ</div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var rotateY = 0,
+        rotateX = 0;
+
+      document.onkeydown = function (e) {
+        if (e.keyCode === 37) rotateY -= 4
+        else if (e.keyCode === 38) rotateX += 4
+        else if (e.keyCode === 39) rotateY += 4
+        else if (e.keyCode === 40) rotateX -= 4
+
+        document.querySelector('.cube').style.transform =
+          'rotateY(' + rotateY + 'deg)' +
+          'rotateX(' + rotateX + 'deg)';
+      }
+    })
+    ();
+  </script>
+</body>
+
+</html>
