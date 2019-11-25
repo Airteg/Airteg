@@ -1,0 +1,61 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <style>
+ #circle1 {
+  animation-name: cirlce1;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#circle2 {
+  animation-name: cirlce2;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cirlce1 {
+  from {
+    cy: 0%;
+    fill: none;
+    stroke: grey;
+  }
+  to {
+    cy: 50%;
+    fill: #9284D9;
+    stroke: white;
+  }
+}
+
+@keyframes cirlce2 {
+  from {
+    cx: 100%;
+    fill: none;
+    stroke: grey;
+  }
+  to {
+    cx: 52%;
+    fill: #9284D9;
+    stroke: white;
+  }
+}
+ </style>
+
+
+ <g>
+  <title>background</title>
+  <!-- <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/> -->
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  
+  <ellipse id="circle1" stroke="#000" ry="119.5" rx="123.5" id="svg_6" cy="193.5" cx="298" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="#fff"/>
+  <ellipse id="circle1" stroke="#000" ry="87" rx="93.00001" id="svg_9" cy="197" cx="300.5" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="none"/>
+  <ellipse id="circle2" stroke="#000" ry="63" rx="64.5" id="svg_11" cy="197" cx="302" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="none"/>
+  <ellipse id="circle2" stroke="#000" ry="38" rx="37" id="svg_13" cy="198" cx="302.5" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="none"/>
+  
+ </g>
+</svg>

@@ -1,0 +1,36 @@
+﻿<svg width="340" height="240">
+<style>
+/* Используемые цвета:
+  teal, lightseagreen, gold
+*/
+
+svg {
+  border: 1px solid #dddddd;
+  fill:none;
+}
+</style>
+  <polyline points="111 61.5 217.984 61.5 123.035 180.231 229.738 180.06" 
+  stroke="teal"
+  stroke-width="80"
+  stroke-linecap="square"
+  ></polyline>
+
+  <polyline points="122 61.5 217.984 61.5 123.035 180.231 218.738 180.06"
+  stroke="lightseagreen"
+  stroke-width="50"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  ></polyline>
+
+  <polyline points="120 61.5 217.984 61.5 123.035 180.231 220.738 180.06"
+  stroke="gold"
+  stroke-width="10"
+  
+  stroke-linejoin="bevel"
+  ></polyline>
+
+</svg>
+<!--Испытание: зигзаг
+Используя обводки с разными параметрами из двух чёрных треугольников нужно получить зигзаг.
+
+Толщина всех обводок кратна 10. Используйте цвета teal, lightseagreen и gold.-->

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  height="500" width="500">
+
+  <linearGradient id="sky" x1="0" y1="0" x2="100%" y2="0%" gradientTransform="rotate(85, .5, .5)">
+    <stop offset="0%" stop-color="#010101" />
+    <stop offset="31%" stop-color="#010101" />
+    <stop offset="42%" stop-color="#014980" />
+    <stop offset="57%" stop-color="#3398cc" />
+    <stop offset="100%" stop-color="#ebcdff" />
+  </linearGradient>
+  <circle r="235" cx="50%" cy="50%" fill="url(#sky)"></circle>
+
+
+
+  
+  <polygon points="50,5 20,99 95,39 5,39 80,99" style="fill:#00bd9d;stroke:#00bd9d;stroke-width:1;fill-rule:nonzero">
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="scale" 
+      values="0;1;1;1;1;1;0;0;0;0;0;0;0;0;0"
+      begin="0s" 
+      dur="10s" 
+      repeatCount="indefinite" 
+      additive="sum"/>
+    <!-- <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="scale" 
+      from="3" 
+      to="1" 
+      begin="1s" 
+      dur="10s" 
+      repeatCount="none" 
+      additive="sum"/> -->
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="rotate" 
+      from="0 100 500" 
+      to="360 300 500" 
+      begin="4s" 
+      dur="9s" 
+      repeatCount="indefinite" 
+      additive="sum"/>
+    </polygon>
+  
+</svg>

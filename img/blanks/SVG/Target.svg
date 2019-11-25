@@ -1,0 +1,12 @@
+﻿<svg width="300" height="290">
+  <rect width="300" height="181" fill="skyblue"/>
+  <rect width="300" height="109" y="181" fill="yellowgreen"/>
+  <rect width="10" height="40" x="79" y="217" ry="5" fill="black"/>
+  <rect width="10" height="40" x="206" y="217" ry="5" fill="black"/>
+  <circle r="100" cx="150"cy="157" fill="crimson"/>
+  <circle r="80" cx="150"cy="157" fill="white"/>
+  <circle r="60" cx="150"cy="157" fill="crimson"/>
+  <circle r="40" cx="150"cy="157" fill="white"/>
+  <circle r="20" cx="150"cy="157" fill="crimson"/>
+  
+</svg>

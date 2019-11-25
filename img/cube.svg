@@ -1,3 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-    
+  	<style>
+		svg{background-color:none;}
+		#wing{fill:#81CCAA;}
+		#body{fill:#B8E4C2;}
+		#pupil{fill:#1F2600;}
+		#beak{fill:#F69C0D;}
+		.eye-ball{fill:#F6FDC4;}
+	</style>
+	<g id="bird">
+		<g id="body">
+			<path d="M48.42,78.11c0-17.45,14.14-31.58,31.59-31.58s31.59,14.14,31.59,31.58c0,17.44-14.14,31.59-31.59,31.59S48.42,95.56,48.42,78.11"/>
+			<path d="M109.19,69.88c0,0-8.5-27.33-42.51-18.53c-34.02,8.81-20.65,91.11,45.25,84.73c40.39-3.65,48.59-24.6,48.59-24.6S124.68,106.02,109.19,69.88"/>
+			<path id="wing" d="M105.78,75.09c4.56,0,8.84,1.13,12.62,3.11c0,0,0.01-0.01,0.01-0.01l36.23,12.38c0,0-13.78,30.81-41.96,38.09c-1.51,0.39-2.82,0.59-3.99,0.62c-0.96,0.1-1.92,0.16-2.9,0.16c-15.01,0-27.17-12.17-27.17-27.17C78.61,87.26,90.78,75.09,105.78,75.09">
+				<!-- <animate attributeType="XML"
+				attributeName="transform"
+				type="translate"
+				from="10" to="45"
+				dur="3s"
+				repeatCount="5"/> -->
+				<animateTransform 
+				attributeName="transform" 
+				attributeType="XML" 
+				type="rotate" 
+				from="0" 
+				to="15" 
+				begin="1s" 
+				dur="3s" 
+				repeatCount="indefinite" 
+				additive="sum"/>
+			</path>
+				 fill="" stroke="" stroke-width="" />
+		</g>
+		<g id="head">
+			<path id="beak" d="M50.43,68.52c0,0-8.81,2.58-10.93,4.86l9.12,9.87C48.61,83.24,48.76,74.28,50.43,68.52"/>
+			<circle class="eye-ball" cx="72" cy="71.5" r="11"/>
+			<circle id="pupil" cx="72" cy="71.5" r="7"/>
+			<circle class="eye-ball" cx="77" cy="74" r="5"/>
+		</g>
+	</g>
+
 </svg>
